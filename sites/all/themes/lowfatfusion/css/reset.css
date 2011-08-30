@@ -1,0 +1,80 @@
+
+/* From CSS COOKBOOK, Chapter 5.2*/
+
+
+/* Eric Meyer, author of CSS: The Definitive Guide (O’Reilly), created his own version of CSS reset after reviewing the original Yahoo! files (see http://meyerweb.com/eric/
+thoughts/2007/04/1 2/reset-styles/)*/
+
+
+/* In Meyer’s reset stylesheet, he creates a starting point for the size of the fonts by setting the value for font-size to 100% and line-height to 1 (or 100%) in the body general
+selector.
+
+The background of most of the elements is set to transparent, whereas YUI Reset CSS
+sets the background value to white (#fff) for the html element.
+
+The quote property is set to none for the blockquote and q elements, which is used for
+setting the kind of quotation marks for, well, quotations and nested quotations. This
+is absent from the YUI Reset CSS file.
+
+Also absent from the YUI Reset CSS file are rules for : focus, which dictates how an
+element renders when activated by the user (such as clicking within a form element’s
+input text box).
+
+So, which one should you use? Try both and determine which one is right for you.
+A better solution would be to create your own CSS reset.
+
+Between the Yahoo! Developer Network and Eric Meyer’s reset stylesheet, there are
+enough differences in their honest approaches to solve the problem that a right solution isn’t a matter of picking the latest version or the one with the most compact code. Craft your own CSS reset tool based on how you work and what you need to do the best job you can.*/
+
+
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
